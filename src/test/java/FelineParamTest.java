@@ -17,20 +17,17 @@ public class FelineParamTest {
     @Parameterized.Parameters(name = "Тестовые данные: {0}")
     public static Object[][] getKittens() {
         return new Object[][]{
-                {10},
+                {7},
                 {3},
-                {-1},
+                {-4},
                 {-7},
         };
     }
 
     @Test
     public void quantityMatchingKittens() {
-        //arrange
         Feline feline = new Feline();
-        //act
         int actual = feline.getKittens(countKittens);
-        //assert
         assertEquals("Количество не соответствует", countKittens, actual);
     }
 }

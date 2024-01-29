@@ -17,34 +17,25 @@ public class CatTest {
 
     @Test
     public void GetFoodMethodTest() throws Exception {
-        //arrange
         Cat cat = new Cat(feline);
         List<String> expectedFood = List.of("Животные", "Птицы", "Рыба");
         Mockito.when(feline.eatMeat()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
-        //act
         List<String> actualFood = cat.getFood();
-        //assert
         Assert.assertEquals("Еда не соответствует виду животного", expectedFood, actualFood);
     }
 
     @Test
     public void catGedFoodLikePredatorMockTest() throws Exception {
-        //arrange
         Cat cat = new Cat(feline);
-        //act
-        Mockito.when(feline.eatMeat()).thenReturn(Arrays.asList("Бургеры", "Пицца", "Шаверма"));
-        //assert
-        Assert.assertEquals(Arrays.asList("Бургеры", "Пицца", "Шаверма"), cat.getFood());
+        Mockito.when(feline.eatMeat()).thenReturn(Arrays.asList("Мясо1", "Мясо2", "Мясо3"));
+        Assert.assertEquals(Arrays.asList("Мясо1", "Мясо2", "Мясо3"), cat.getFood());
     }
 
     @Test
     public void getCatSoundReturn() {
-        //arrange
         Cat cat = new Cat(feline);
         String expectedCatSound = "Мяу";
-        //act
         String actualGetSound = cat.getSound();
-        //assert
-        Assert.assertEquals("Кот издал не Мяу", expectedCatSound, actualGetSound);
+        Assert.assertEquals("Кот сказал не Мяу", expectedCatSound, actualGetSound);
     }
 }
