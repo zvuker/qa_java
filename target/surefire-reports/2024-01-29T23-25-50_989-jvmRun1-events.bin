@@ -1,0 +1,37 @@
+FATAL ERROR in native meATAL ERROR in native method: processing of -javhod: processing of -javaagent failed, processJaagent failed, processJavaStart failed
+#
+# A fataStart failed
+#
+# A fatal error has been detectl error has been detected by the Java Runtime Ed by the Java Runtime Environment:
+#
+#  EXCEPTIvironment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xcN_ACCESS_VIOLATION (0xc0000005) at pc=0x0000022000005) at pc=0x0000022b886c12e7, pid=4544, tid886c12e7, pid=4544, tid=16172
+#
+# JRE version: 16172
+#
+# JRE version: OpenJDK Runtime EnvironmpenJDK Runtime Environment Corretto-11.0.22.7.1nt Corretto-11.0.22.7.1 (11.0.22+7) (build 11.0(11.0.22+7) (build 11.0.22+7-LTS)
+# Java VM: Op22+7-LTS)
+# Java VM: OpenJDK 64-Bit Server VM CnJDK 64-Bit Server VM Corretto-11.0.22.7.1 (11.rretto-11.0.22.7.1 (11.0.22+7-LTS, mixed mode, .22+7-LTS, mixed mode, tiered, compressed oops,iered, compressed oops, g1 gc, windows-amd64)
+#g1 gc, windows-amd64)
+# Problematic frame:
+# v Problematic frame:
+# v  ~StubRoutines::get_prev~StubRoutines::get_previous_fp
+#
+# No core dumpous_fp
+#
+# No core dump will be written. Miniduwill be written. Minidumps are not enabled by dps are not enabled by default on client versionfault on client versions of Windows
+#
+# An erro of Windows
+#
+# An error report file with more  report file with more information is saved as:nformation is saved as:
+# C:\Users\ой\IdeaProje# C:\Users\ой\IdeaProjects\qa_java_1\hs_err_pidts\qa_java_1\hs_err_pid4544.log
+a_1\hs_err_pid4544.log
+Could not load hsdis-amdould not load hsdis-amd64.dll; library not load4.dll; library not loadable; PrintAssembly is dble; PrintAssembly is disabled
+ntAssembly is disabled
+#
+# If you would like to
+# If you would like to submit a bug report, plsubmit a bug report, please visit:
+#   https://ase visit:
+#   https://github.com/corretto/corrithub.com/corretto/corretto-11/issues/
+#
