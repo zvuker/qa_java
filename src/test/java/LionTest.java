@@ -56,7 +56,8 @@ public class LionTest {
     @Test
     public void getLionEatAnatherMeat() throws Exception {
         Lion lion = new Lion("Самец", feline);
-        Mockito.when(feline.getFood("Хищник")).thenReturn(Arrays.asList("Животные", "Рыба", "Птицы"));
+        //Mockito.when(feline.getFood("Хищник")).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
+        Mockito.when(feline.eatMeat()).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
         List<String> expectedEatMeat = Arrays.asList("Животные", "Птицы", "Рыба");
         List<String> actualEatMeat = lion.getFood();
         assertTrue(expectedEatMeat.size() == actualEatMeat.size() && expectedEatMeat.containsAll(actualEatMeat) && actualEatMeat.containsAll(expectedEatMeat));
@@ -65,7 +66,8 @@ public class LionTest {
     @Test
     public void getLionEatMeat() throws Exception {
         Lion lion = new Lion("Самец", feline);
-        Mockito.when(feline.getFood("Хищник")).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
+        //Mockito.when(feline.getFood("Хищник")).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
+        Mockito.when(feline.eatMeat()).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
         List<String> expectedEatMeat = Arrays.asList("Животные", "Птицы", "Рыба");
         List<String> actualEatMeat = lion.getFood();
         assertEquals(expectedEatMeat, actualEatMeat);
